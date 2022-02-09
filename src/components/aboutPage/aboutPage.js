@@ -1,6 +1,6 @@
 import aboutImage from "../../assets/about-image.jpg";
 import "./aboutPage.scss"
-import { FaHtml5, FaCss3, FaJs, FaReact, FaSass, FaNpm, FaGit, FaGithub } from 'react-icons/fa';
+import { FaHtml5, FaCss3, FaJs, FaReact, FaSass, FaNpm, FaGit, FaGithub, FaFigma } from 'react-icons/fa';
 
 
 function AboutPage() {
@@ -68,6 +68,7 @@ function AboutPage() {
                                 <FaNpm />  
                                 <p>npm</p>
                             </div>
+                            
                             <div>
                                 <FaGit />  
                                 <p>Git</p>
@@ -76,12 +77,16 @@ function AboutPage() {
                                 <FaGithub /> 
                                 <p>Github</p>
                             </div>
+                            <div>
+                                <FaFigma /> 
+                                <p>Figma</p>
+                            </div>
                              
                             {/* FaHtml5, FaCss3, FaJs, FaReact, FaSass, FaNpm, FaGit, FaGithub */}
                         </div>
                     </div>
-                    <div className="miscellanousSkills skillWrapper">
-                        <h3>miscellanous</h3>
+                    <div className="miscellaneousSkills skillWrapper">
+                        <h3>miscellaneous</h3>
                         <div className="skillItems">
                             <div>
                                 {/* the adobe suite icons are imported via css using devicon.dev */}
