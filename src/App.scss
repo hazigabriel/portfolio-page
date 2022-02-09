@@ -18,7 +18,7 @@
 section {
   background: $primaryBackground;
   color: $primaryText;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .sectionWrapper {

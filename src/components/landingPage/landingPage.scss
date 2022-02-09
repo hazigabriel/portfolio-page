@@ -1,0 +1,91 @@
+@import "../../assets/variables.scss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nameColumn {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .nameWrapper {
+        div {
+            height: 5rem;
+            overflow: hidden;
+            .nameMenu {
+                transform: translateY(-5em);
+                a {
+                    color:blue
+                }
+            }
+            
+            .nameItem {
+                transform: translateY(-5rem);
+            }
+            &:hover .nameItem {
+                transform: translateY(5rem)
+            }
+            &:hover .nameMenu {
+                transform: translateY(0)
+            }
+            h2 {
+                font-family: $headerFont;
+                color: $primaryText;
+                font-size: 3em;
+                line-height: 1.5em;
+                letter-spacing: 0.05em;
+                user-select: none;
+                transition: 0.3s ease;
+                height: 4rem;
+                a, a:visited {
+                    color: #b800b8;
+                    text-decoration: none;
+                    
+                }
+            }
+             
+        }
+    }
+    
+    
+}
+.dotsColumn {
+    grid-column: 3/3;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    .dotsWrapper {
+        transition: all 1s ease;
+
+        animation: rotateCube ease 1s 1;
+
+       
+        @keyframes rotateCube{
+            from {
+                transform: rotate(0deg) scale(1)
+            }
+            50% {
+                transform: scale(1.1)
+            }
+            to {
+                transform: rotate(90deg) scale(1)
+            }
+            
+        }
+        .dotRow {
+            display: flex;
+            flex-direction: row;
+             
+            .dot {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 100%;
+                background-color: $primaryText;
+                transition: 0.4s ease;
+                margin: 0.2rem;
+               
+            }
+        }
+    }
+}
+ 
