@@ -6,6 +6,7 @@ html {
 
 .nameColumn {
     display: flex;
+    grid-column: 1/3;
     align-items: center;
     flex-wrap: wrap;
     .nameWrapper {
@@ -20,7 +21,7 @@ html {
             }
             
             .nameItem {
-                transform: translateY(-5rem);
+                transform: translateY(-4rem);
             }
             &:hover .nameItem {
                 transform: translateY(5rem)

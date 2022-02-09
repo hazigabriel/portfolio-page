@@ -1,5 +1,8 @@
 import aboutImage from "../../assets/about-image.jpg";
 import "./aboutPage.scss"
+import { FaHtml5, FaCss3, FaJs, FaReact, FaSass, FaNpm, FaGit, FaGithub } from 'react-icons/fa';
+
+
 function AboutPage() {
 
     return (
@@ -29,34 +32,71 @@ function AboutPage() {
                     </div>
                 </div>
                 <div class="skillsWrapper">
-                    <h2>skills:</h2>
+                    <h2>technical skills:</h2>
                     <div className="frontEndSkills skillWrapper">
                         <div>
                             <h3>front-end</h3>
                             <div className="skillItems">
-                                <p>placeholder</p>
-                                <p>placeholder</p>
-                                <p>placeholder</p>
+                                <div>
+                                    <FaHtml5 />
+                                    <p>HTML5</p>
+                                </div>
+                                <div>
+                                    <FaCss3 />
+                                    <p>CSS3</p>
+                                </div>
+                                <div>
+                                    <FaJs />
+                                    <p>Javascript</p>
+                                </div>
+                                <div>
+                                    <FaReact />
+                                    <p>ReactJS</p>
+                                </div>
+                                <div>
+                                    <FaSass />
+                                    <p>Sass</p>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                     <div className="toolsSkills skillWrapper">
                         <h3>tools</h3>
                         <div className="skillItems">
-                            <p>placeholder</p>
-                            <p>placeholder</p>
-                            <p>placeholder</p>
+                            <div>
+                                <FaNpm />  
+                                <p>npm</p>
+                            </div>
+                            <div>
+                                <FaGit />  
+                                <p>Git</p>
+                            </div>
+                            <div>
+                                <FaGithub /> 
+                                <p>Github</p>
+                            </div>
+                             
+                            {/* FaHtml5, FaCss3, FaJs, FaReact, FaSass, FaNpm, FaGit, FaGithub */}
                         </div>
                     </div>
                     <div className="miscellanousSkills skillWrapper">
                         <h3>miscellanous</h3>
                         <div className="skillItems">
-                            <p>placeholder</p>
-                            <p>placeholder</p>
-                            <p>placeholder</p>
-                            <p>placeholder</p>
-                            <p>placeholder</p>
-                            <p>placeholder</p>
+                            <div>
+                                {/* the adobe suite icons are imported via css using devicon.dev */}
+                                <i class="devicon-illustrator-plain"></i>
+                                <p>Illustrator</p>
+                            </div>
+                            <div>
+                                <i class="devicon-photoshop-plain"></i>
+                                <p>Photoshop</p>
+                            </div>
+                            <div>
+                                <i class="devicon-premierepro-plain"></i>
+                                <p>Premiere</p>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
