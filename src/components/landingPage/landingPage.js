@@ -1,6 +1,6 @@
 import react from "react";
 import './landingPage.scss';
- 
+
 
 function LandingPage() {
     function generateDots() {
