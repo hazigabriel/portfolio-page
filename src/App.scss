@@ -12,9 +12,17 @@
 
 * {
   margin: 0;
-  padding: 0
+  padding: 0;
+ 
 }
 
+::-webkit-scrollbar-track {
+  background: red;
+  
+}
+::-webkit-scrollbar-button {
+  background-color: red;
+}
 section {
   background: $primaryBackground;
   color: $primaryText;

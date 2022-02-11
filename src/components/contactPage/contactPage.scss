@@ -1,0 +1,98 @@
+@import "../../assets/variables.scss";
+
+
+.contactContent {
+    align-content: end;
+    font-family: $contentFont;
+    .contactIcons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+        h3 {
+            font-family: $headerFont;
+            letter-spacing: 2px;
+            font-size: 1.2em;
+        }
+        .contactIconsWrapper {
+            a, a:visited {
+                color: $primaryText;
+                text-decoration: none;
+            }
+            div {
+                display: flex;
+                align-items: center;
+                gap:1rem;
+                font-size: 1.2em;
+                margin-top: 2rem;
+                &:hover {
+                    color: $accentColorSecondary;
+                    cursor: pointer
+                }
+                svg {
+                    font-size: 2rem;
+                }
+            }
+
+        }
+    }
+    .contactFormWrapper {
+        grid-column: 2 / -1;
+        color: $primaryText;
+         form {
+            display: flex; 
+            flex-direction: column;
+            
+            h3 {
+                align-self: flex-end;
+                margin-bottom: 5rem;
+                width: 80%;
+                font-family: $headerFont;
+                font-size: 1.2em;
+            }
+            input {
+                width:80%;
+                color: $primaryText;
+                align-self: flex-end;
+                min-width:80%;
+                border:none;
+                background: none;
+                border-bottom:2px solid $accentColorSecondary;
+                outline: none;
+                height: 2rem;
+                font-size: 1em;
+            }
+            textarea {
+                color: $primaryText;
+                align-self: flex-end;
+                min-width: 80%;
+                resize: none;
+                background: none;
+                border: none;
+                outline: none;
+                font-size: 1.2em;
+                height: 7rem;
+               
+            }
+            button {
+                cursor: pointer;
+                align-self: flex-end;
+                width:8rem;
+                margin-top: 2rem;
+                font-family: $headerFont;
+                font-size: 1rem;
+                padding: 0.5rem 2rem;
+                color: $primaryText;
+                background-color: $accentColorSecondary;
+                transition: 0.3s;
+                border: 2px solid $accentColorSecondary;
+                border-radius: 3px;
+                margin-bottom: 2rem;
+                &:hover {
+                    background-color: $accentColor;
+                    border-color: $accentColor;
+                }
+            }
+        }
+    }
+}

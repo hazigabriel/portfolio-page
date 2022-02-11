@@ -1,0 +1,47 @@
+@import "../../assets/variables.scss";
+
+.navbar {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    width: 100vw;
+    z-index: 10;
+    background-color: $primaryBackground;
+ 
+ 
+    .menu {
+        justify-self: end;
+        grid-column: 2/3;
+        font-family: $headerFont;
+        top:1rem;
+        
+    }
+    a {
+        display: inline-block;
+        position: relative;
+        padding: 1rem;
+        
+        // padding: 1rem 0; if we only want the border length to be as long as the text
+        // margin: 0 1rem;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 4px;
+            bottom: 0;
+            left: 0;
+            background-color: $accentColorSecondary;
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+        &:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    }
+    a, a:visited {
+        color: $accentColorSecondary;
+        text-decoration: none;
+    }
+}
