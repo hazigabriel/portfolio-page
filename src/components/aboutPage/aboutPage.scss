@@ -2,7 +2,7 @@
 
 .aboutPageContent {
 
-    margin-top: 2rem;
+    padding-top: 5rem;
     font-family: $contentFont;
     .description {
         grid-column: 1/-1;
@@ -48,7 +48,8 @@
         h2 {
             grid-column: 1/-1;
             margin-bottom: 3rem;
-            
+            font-family: $headerFont;
+            letter-spacing: 2px;
         }
         .skillWrapper {
             &:nth-child(3){

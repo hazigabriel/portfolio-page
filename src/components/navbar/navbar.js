@@ -1,13 +1,14 @@
 import "./navbar.scss"
 
 function Navbar() {
+
+    
     return (
-        <div className="navbar">
+        <div className="navbar navbarHidden">
             <div className="menu">
-                <a href="#landing">home</a>
-                <a href="#about">about</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">contact</a>
+                <a className="menuItem" href="#about">about</a>
+                <a className="menuItem" href="#portfolio">Portfolio</a>
+                <a className="menuItem" href="#contact">contact</a>
             </div>
         </div>
         

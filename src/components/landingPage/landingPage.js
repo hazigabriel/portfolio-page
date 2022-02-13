@@ -29,7 +29,7 @@ function LandingPage() {
     }, 5000);
     
     return(
-        <section className="landingPageWrapper sectionWrapper">
+        <section className="landingPageWrapper sectionWrapper" id="landing">
             <div className="landingPageContent sectionContent">
                     <div className="nameColumn">
                         <div className="nameWrapper">
