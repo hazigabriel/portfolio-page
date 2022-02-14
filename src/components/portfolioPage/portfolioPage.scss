@@ -12,31 +12,33 @@
         margin-bottom: 2rem;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        max-height: 20rem;
+        min-height: 20rem;
         .itemDescription {
             grid-column:1/2;
             display: flex;
+            gap:1rem;
             flex-direction: column;
             justify-content: space-between;
             margin:1rem;
             .portfolioButtons {
                 display: flex;
-                gap: 2rem;
-                margin-bottom: 1rem;
-      
-                div {
+                gap:0.5rem;
+              
+                a, a:visited {
                     display: flex;
+                    font-weight: bold;
+                    font-size: 1.05em;
                     justify-content: center;
                     align-items: center;
+                    text-decoration: none;
                     height: 3rem;
                     width: 8rem;
-                     transition: 0.3s ease;
-                    a, a:visited {
-                        color: $primaryText;
-                        text-decoration: none
-                    }
-                    &:hover {
-                        background-color: $accentColor;
+                    transition: 0.3s ease;
+                    color: $accentColorSecondary;
+                    box-sizing: border-box;
+                    &:hover   {
+                        color: $accentColor;
+                        transform: scale(1.1)
                     }
                 }
                 
@@ -46,12 +48,13 @@
             grid-column: 2 / -1;
             overflow: hidden;
             margin:1rem;
+            min-height:20rem;
             .videoWrapper {
                
                 overflow: hidden;
                 
-                .video {
-                    transform: translateY(23rem)
+                video {
+                    width: 100%
                 }
             }
         }
