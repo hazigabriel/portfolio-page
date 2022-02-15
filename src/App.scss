@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: 1fr 10fr 1fr;
 }
+ 
 @mixin innerGridSystem() {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr
@@ -41,3 +42,20 @@ section {
  
 
  
+ @media  (max-width: 575px) {
+  .sectionWrapper {
+    grid-template-columns: 1fr 20fr 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    
+}
+
+// @media (min-width: 768px) and (max-width: 991px){
+
+// }
+
+// @media (min-width: 992px) and (max-width: 1200px) {
+ 
+// }

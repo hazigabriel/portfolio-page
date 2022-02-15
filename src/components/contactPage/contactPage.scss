@@ -49,6 +49,7 @@
                 width: 80%;
                 font-family: $headerFont;
                 font-size: 1.2em;
+                transition: 0.3s ease;
             }
             input {
                 width:80%;
@@ -61,17 +62,20 @@
                 outline: none;
                 height: 2rem;
                 font-size: 1em;
+                transition: 0.3s ease;
             }
             textarea {
                 color: $primaryText;
                 align-self: flex-end;
                 min-width: 80%;
+                width:80%;
                 resize: none;
                 background: none;
                 border: none;
                 outline: none;
                 font-size: 1.2em;
                 height: 7rem;
+                transition: 0.3s ease !important;
                
             }
             button {
@@ -96,3 +100,98 @@
         }
     }
 }
+
+ 
+@media  (max-width: 575px) {
+    .contactContent  {
+        grid-template-columns: 1fr !important;
+        .contactIcons {
+            order:2;
+            .contactIconsWrapper {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .contactFormWrapper {
+            grid-column: 1/-1;
+            order:1;
+            form {
+                display: flex; 
+                flex-direction: column;
+                
+                h3 {
+                    width: 100% !important;
+                   
+                }
+                input {
+                    width: 100% !important;
+                }
+                textarea {
+                    width: 100% !important;
+                   
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .contactContent  {
+        grid-template-columns: 1fr !important;
+        .contactIcons {
+            order:2;
+            .contactIconsWrapper {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+        .contactFormWrapper {
+            grid-column: 1/-1;
+            order:1;
+            form {
+                display: flex; 
+                flex-direction: column;
+                
+                h3 {
+                    width: 100% !important;
+                   
+                }
+                input {
+                    width: 100% !important;
+                }
+                textarea {
+                    width: 100% !important;
+                   
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    
+    .contactContent  {
+         
+        form {
+            display: flex; 
+            flex-direction: column;
+            
+            h3 {
+                width: 100% !important;
+               
+            }
+            input {
+                width: 100% !important;
+            }
+            textarea {
+                width: 100% !important;
+               
+            }
+        }
+    }
+    
+}
+
+// @media (min-width: 992px) and (max-width: 1200px) {
+ 
+// }

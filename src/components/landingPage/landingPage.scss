@@ -88,3 +88,70 @@ html {
     }
 }
  
+@media  (max-width: 575px) {
+    .landingPageContent  {
+        grid-template-columns: 1fr !important;
+        .nameColumn {
+            font-size: 0.8em;
+            grid-column: 1/ -1;
+            justify-content: center;
+        }
+        .dotsColumn {
+            grid-column: 1/-1;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            .dotsWrapper {
+                .dotRow {
+                    .dot {
+                        width: 3.5rem;
+                        height: 3.5rem;
+                        border-radius: 100%;
+                        background-color: $primaryText;
+                        transition: 0.4s ease;
+                        margin: 0.3rem;
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .landingPageContent  {
+        grid-template-columns: 1fr !important;
+        .nameColumn {
+            font-size: 0.8em;
+            grid-column: 1/ -1;
+            justify-content: center;
+        }
+        .dotsColumn {
+            grid-column: 1/-1;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            .dotsWrapper {
+                .dotRow {
+                    .dot {
+                        width: 3.5rem;
+                        height: 3.5rem;
+                        border-radius: 100%;
+                        background-color: $primaryText;
+                        transition: 0.4s ease;
+                        margin: 0.3rem;
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+
+// @media (min-width: 768px) and (max-width: 991px){
+
+// }
+
+// @media (min-width: 992px) and (max-width: 1200px) {
+ 
+// }

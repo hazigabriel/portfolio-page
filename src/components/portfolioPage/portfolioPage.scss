@@ -60,3 +60,66 @@
         }
     }
 }
+
+@media  (max-width: 575px) {
+    .portfolioItemWrapper {
+        grid-column: 1/ -1;
+        background-color: #272727;
+        border-radius: 2px;
+        margin-bottom: 2rem;
+        display: grid;
+        grid-template-columns: 1fr !important;
+        .itemDescription {
+            order:2
+        }
+        .itemVideo {
+            grid-column: 1 / -1 !important;
+            order: 1; 
+            min-height: 2rem !important
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .portfolioItemWrapper {
+         
+        grid-column: 1/ -1;
+        background-color: #272727;
+        border-radius: 2px;
+        margin-bottom: 2rem;
+        display: grid;
+        grid-template-columns: 1fr !important;
+        .itemDescription {
+            order:2
+        }
+        .itemVideo {
+            grid-column: 1 / -1 !important;
+            order: 1; 
+            min-height: 2rem !important
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .portfolioItemWrapper {
+         
+        grid-column: 1/ -1;
+        background-color: #272727;
+        border-radius: 2px;
+        margin-bottom: 2rem;
+        display: grid;
+        grid-template-columns: 1fr !important;
+        .itemDescription {
+            order:2
+        }
+        .itemVideo {
+            grid-column: 1 / -1 !important;
+            order: 1; 
+            min-height: 2rem !important
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+ 
+}

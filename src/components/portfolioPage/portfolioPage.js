@@ -95,7 +95,7 @@ function PortfolioPage() {
                     <div className="itemDescription">
                         <h2>To Do Tracker</h2>
                         <p>CRUD application created using vanilla Javascript and webpack</p>
-                        <p>We can add new To Do categories or select existing ones, each category contains differents tasks that can be deleted/edited or marked as being completede</p>
+                        <p>We can add new To Do categories or select existing ones, each category contains differents tasks that can be deleted/edited or marked as being completed</p>
 
                         <div className="portfolioButtons">
                             <a href="https://hazigabriel.github.io/toDo/">
