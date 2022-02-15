@@ -23,7 +23,7 @@ function PortfolioPage() {
                     </div>
                     <div className="itemVideo">
                         <div className="videoWrapper">
-                            <video loop autoPlay muted>
+                            <video loop autoPlay muted playsInline>
                                 <source
                                     src={shoppingPageVideo}
                                     type="video/mp4"
@@ -51,7 +51,7 @@ function PortfolioPage() {
                     </div>
                     <div className="itemVideo">
                         <div className="videoWrapper">
-                            <video loop autoPlay muted>
+                            <video loop autoPlay muted playsInline>
                                 <source
                                     src={cardGameVideo}
                                     type="video/mp4"
@@ -80,7 +80,7 @@ function PortfolioPage() {
                     </div>
                     <div className="itemVideo">
                         <div className="videoWrapper">
-                            <video loop autoPlay muted>
+                            <video loop autoPlay muted playsInline>
                                 <source
                                     src={cvGeneratorVideo}
                                     type="video/mp4"
@@ -108,7 +108,7 @@ function PortfolioPage() {
                     </div>
                     <div className="itemVideo">
                         <div className="videoWrapper">
-                            <video loop autoPlay muted>
+                            <video loop autoPlay muted playsInline>
                                 <source
                                     src={toDoVideo}
                                     type="video/mp4"

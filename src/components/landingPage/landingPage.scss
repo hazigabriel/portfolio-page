@@ -92,7 +92,7 @@ html {
     .landingPageContent  {
         grid-template-columns: 1fr !important;
         .nameColumn {
-            font-size: 0.8em;
+            font-size: 0.7em;
             grid-column: 1/ -1;
             justify-content: center;
         }
@@ -104,8 +104,8 @@ html {
             .dotsWrapper {
                 .dotRow {
                     .dot {
-                        width: 3.5rem;
-                        height: 3.5rem;
+                        width: 3rem;
+                        height: 3rem;
                         border-radius: 100%;
                         background-color: $primaryText;
                         transition: 0.4s ease;

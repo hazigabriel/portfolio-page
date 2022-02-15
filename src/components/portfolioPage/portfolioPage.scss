@@ -54,7 +54,8 @@
                 overflow: hidden;
                 
                 video {
-                    width: 100%
+                    width: 100%;
+                    user-select: none;
                 }
             }
         }
@@ -70,7 +71,10 @@
         display: grid;
         grid-template-columns: 1fr !important;
         .itemDescription {
-            order:2
+            order:2;
+            .portfolioButtons {
+                font-size: 0.9em;
+            }
         }
         .itemVideo {
             grid-column: 1 / -1 !important;
