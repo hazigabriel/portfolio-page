@@ -26,7 +26,7 @@ function AboutPage() {
                     </div>
                     <div className="rightColumn">
                         <div className="aboutImageWrapper">
-                            <img src={aboutImage}></img>
+                            <img src={aboutImage} alt={"Picture of developer"}></img>
                             <p>*me with some cool background rocks</p>
                         </div>
                     </div>
