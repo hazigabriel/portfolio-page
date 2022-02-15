@@ -1,4 +1,3 @@
-import react from "react";
 import './landingPage.scss';
 
 
@@ -18,6 +17,11 @@ function LandingPage() {
     function animateCube() {
         document.querySelector(".dotsWrapper").style.animation = "rotateCube ease 1s 1"
     }
+    setTimeout(() => {
+        animateCube()
+    }, 500)
+    //add an initial animation after 0.5 secs
+
     setInterval(() => {
         animateCube();
         setTimeout(() => {
@@ -26,7 +30,7 @@ function LandingPage() {
         //the cube animation takes 1000ms/1s to complete, we remove the the animation after 1000 ms to allow the full
         //animation to be displayed
 
-    }, 5000);
+    }, 3000);
     
     return(
         <section className="landingPageWrapper sectionWrapper" id="landing">

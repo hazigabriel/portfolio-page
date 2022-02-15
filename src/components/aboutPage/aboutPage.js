@@ -31,7 +31,7 @@ function AboutPage() {
                         </div>
                     </div>
                 </div>
-                <div class="skillsWrapper">
+                <div className="skillsWrapper">
                     <h2>technical skills:</h2>
                     <div className="frontEndSkills skillWrapper">
                         <div>
@@ -90,15 +90,15 @@ function AboutPage() {
                         <div className="skillItems">
                             <div>
                                 {/* the adobe suite icons are imported via css using devicon.dev */}
-                                <i class="devicon-illustrator-plain"></i>
+                                <i className="devicon-illustrator-plain"></i>
                                 <p>Illustrator</p>
                             </div>
                             <div>
-                                <i class="devicon-photoshop-plain"></i>
+                                <i className="devicon-photoshop-plain"></i>
                                 <p>Photoshop</p>
                             </div>
                             <div>
-                                <i class="devicon-premierepro-plain"></i>
+                                <i className="devicon-premierepro-plain"></i>
                                 <p>Premiere</p>
                             </div>
                             

@@ -1,6 +1,4 @@
-import logo from './logo.svg';
 import './App.scss';
-import { useEffect } from 'react';
 import Navbar from './components/navbar/navbar';
 import LandingPage from './components/landingPage/landingPage.js';
 import AboutPage from './components/aboutPage/aboutPage.js';
@@ -59,11 +57,11 @@ function App() {
 
   return (
     <div>
-    <Navbar />
-    <LandingPage />
-    <AboutPage />
-    <PortfolioPage/>
-    <ContactPage/>
+      <Navbar />
+      <LandingPage />
+      <AboutPage />
+      <PortfolioPage/>
+      <ContactPage/>
     </div>
   );
 }
